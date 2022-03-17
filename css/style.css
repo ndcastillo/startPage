@@ -9,8 +9,7 @@ html{
 
 
 body {
-    background-image: url("/images/bg_tile.jpg");
-    background-repeat: repeat;
+    background-color: black;
     display: flex;
     margin: 1em;
     padding: 1em;
