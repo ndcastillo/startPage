@@ -6,92 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="app.js"></script>
+    <script src="./scripts/app.js"></script>
     <title>startPage</title>
 </head>
 <body>
-    
-    <main>
-        <div class="timer" id="timer"></div>
-        
-        <section class="main-content">
-            <h1>Bienvenid@!</h1>
-            <ul>
-                <li>Books JS</li>
-                <li><a href="">Eloquent</a></li>
-                <li><a href="">Platzi</a></li>
-                <li><a href="">Others</a></li>
-            </ul>
-            <ul>
-                <li>Books JS</li>
-                <li><a href="">Eloquent</a></li>
-                <li><a href="">Platzi</a></li>
-                <li><a href="">Others</a></li>
-            </ul>
-            <ul>
-                <li>Books JS</li>
-                <li><a href="">Eloquent</a></li>
-                <li><a href="">Platzi</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-            </ul>
-            <ul>
-                <li>Books JS</li>
-                <li><a href="">Eloquent</a></li>
-                <li><a href="">Platzi</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-            </ul>
-            <ul>
-                <li>Books JS</li>
-                <li><a href="">Eloquent</a></li>
-                <li><a href="">Platzi</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-            </ul>
-            <ul>
-                <li>Books JS</li>
-                <li><a href="">Eloquent</a></li>
-                <li><a href="">Platzi</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-            </ul>
-            <ul>
-                <li>Books JS</li>
-                <li><a href="">Eloquent</a></li>
-                <li><a href="">Platzi</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-                <li><a href="">Others</a></li>
-            </ul>
-        </section>
-        
-    </main>
-    
-    <footer>
-        <nav>
-            <ul class="footer-nav">
-                <li><a href="">Buscar</a></li>
-                <li><a href="">Spotify</a></li>
-                <li><a href="">Mas</a></li>
-            </ul>
-        </nav>
-        <!-- Cambio de Ventana -->
-    </footer>
+    <!-- <div class="timer" id="timer"></div> -->
 
+    <div class="contenedor">
+        <header>
+            <nav class="main-nav">
+                <div class="timer" id="timer"></div>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="main-content">
+                <div class="content1" id="content1">
+                    <h1>Welcome my Friend!</h1>
+                    <div class="link">
+                        <ul>
+                            <li>Learn JS</li>
+                            <li><a href="">Eloquent</a></li>
+                            <li><a href="">Platzi</a></li>
+                            <li><a href="">Mozilla</a></li>
+                        </ul>
+    
+                        <ul>
+                            <li>More</li>
+                            <li><a href="">Playlist</a></li>
+                            <li><a href="">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="content2" id="content2">
+                    <iframe 
+                    src="https://player.vimeo.com/video/123538098" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0"
+                    allow="autoplay"
+                    allowfullscreen></iframe>
+                </div>
+
+                <footer>
+                    <div class="box1 box" onclick="showSidebar1('sidebar1','content1');hideSidebar2('sidebar2','content2')"></div>
+                    <div class="box2 box" onclick="showSidebar2('sidebar2','content2','vimeo');hideSidebar1('sidebar1','content1')"></div>
+                    <div class="box3 box">
+                        Search..
+                    </div>
+                </footer>
+                <!-- <h1>Hola!</h1>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">About us</a></li>
+                </ul> -->
+            </section>
+            <section class="sidebar-image1" id="sidebar1">
+                
+            </section>
+
+            <section class="sidebar-image2" id="sidebar2">
+                
+            </section>
+        </main>
+    
+        
+    </div>
+    
 </body>
 </html>
